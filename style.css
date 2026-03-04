@@ -99,9 +99,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.about, .portfolio, .packages, .testimonials, .contact {
+.about, .packages, .testimonials, .contact {
   padding: 80px 20px;
-  text-align: center;
 }
 
 .carousel{
@@ -257,8 +256,7 @@ h2 {
   position: relative;
   width: 420px;
   height: 600px;
-  margin: 40px auto 0 auto;
-  transform: translateX(-200px); /* 👈 mueve a la izquierda */
+  margin: 40px auto 0 auto; /* esto ya lo centra */
   perspective: 1200px;
 }
 
@@ -322,12 +320,13 @@ h2 {
 }
 
 .nav.prev {
-  left: 130px;  /* 200 - 70 = 130 */
+  left: -70px;
 }
 
 .nav.next {
-  right: -290px; /* -70 - 200 = -270 */
+  right: -70px;
 }
+
 /* ============================= */
 /* 📱 RESPONSIVE PARA CELULAR   */
 /* ============================= */
@@ -355,9 +354,9 @@ h2 {
   /* STACK CARRUSEL */
   .stack-carousel {
     width: 90%;
-    height: 500px;
-    margin: 20px auto;
-    transform: translateX(-160px); /* quitamos desplazamiento */
+    max-width: 420px;
+    height: 600px;
+    margin: 40px auto 0 auto;
   }
 
   .stack-track {
@@ -385,11 +384,11 @@ h2 {
   }
 
   .nav.prev {
-    left: 145px;
+    left: -70px;
   }
-
+  
   .nav.next {
-    right: -190px;
+    right: -70px;
   }
 
   /* CARDS */
@@ -404,3 +403,17 @@ h2 {
   }
 
 }
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+  }
+
+}
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
