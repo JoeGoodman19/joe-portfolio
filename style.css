@@ -35,27 +35,59 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.6);
   text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 }
 
 .overlay h1 {
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: 800;
+  letter-spacing: 2px;
+}
+.overlay p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  
+}
+.tagline {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
 }
 
 .btn-primary {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  background: #000000;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
+  background: #fff;
+  color: #000;
 }
 
+.btn-primary:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
 .portfolio {
   padding: 60px 20px;
+  text-align: center;
+}
+.about, .portfolio, .packages, .testimonials, .contact {
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -68,20 +100,20 @@ body {
   overflow:hidden;
   max-width:500px;
   margin:auto;
-  }
+}
   
-  .carousel-track{
+.carousel-track{
   display:flex;
   transition:transform 0.5s ease;
   width:100%;
-  }
+ }
   
-  .carousel-track img{
+.carousel-track img{
   min-width:100%;
   height:600px;
   object-fit:cover;
   border-radius:12px;
-  }
+}
 
 .carousel button {
   position: absolute;
@@ -120,10 +152,14 @@ body {
   padding: 60px;
   border-radius: 20px;
   width: 300px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
 }
 
 .highlight {
   background:  #ffffff;
+  color: #000;
 }
 
 .contact {
@@ -143,17 +179,11 @@ footer {
   color: #000000;
 }
 
-/* Fuerza texto negro dentro de Pro */
-.card.highlight h3,
-.card.highlight p,
-.card.highlight .price {
-  color: #000000 !important;
-}
 .price {
-    font-size: 38px;
+  font-size: 38px;
     
-    letter-spacing: 1px;
-    margin: 15px 0;
+  letter-spacing: 1px;
+  margin: 15px 0;
 }
 .card p {
   margin: 8px 0;
@@ -165,14 +195,7 @@ footer {
 h2 {
   margin-bottom: 40px;  /* aumenta separación hacia abajo */
 }
-.overlay p {
-  font-size: 24px;
-  border-bottom: 2px solid white;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-top: 15px;
-  
-}
+
   
 .overlay a {
   font-size: 18px;
@@ -192,8 +215,9 @@ h2 {
   transition: 0.3s;
 }
 .contact a:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .card {
   text-decoration: none;
@@ -201,8 +225,18 @@ h2 {
   cursor: pointer;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 .contact {
   padding-top: 40px; /* reduce este valor si quieres subir más */
+}
+
+.badge {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
