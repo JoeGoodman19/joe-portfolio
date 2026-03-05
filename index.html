@@ -8,74 +8,228 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <nav class="navbar">
+    <div class="logo">JOE VISUALS</div>
+    <ul>
+      <li><a href="#portfolio">Portafolio</a></li>
+      <li><a href="#packages">Experiencias</a></li>
+      <li><a href="#contacto" class="nav-cta">Reservar</a></li>
+    </ul>
+  </nav>
 <header class="hero">
   <img src="img/hero.jpg" class="hero-img">
   <div class="overlay">
     <h1>Joe Visuals</h1>
-    <p>Fotografía profesional de conciertos en Lima</p>
-    <span class="tagline">Entrega rápida · Edición cinematográfica · Cobertura completa</span>
-    <a href="#contacto" class="btn-primary">Reservar Ahora</a>
+    <p>Fotografía cinematográfica en Lima</p>
+    <span class="tagline">Personas · Marcas · Gastronomía</span>
+    <a href="#contacto" class="btn-primary">Agendar sesión</a>
   </div>
 </header>
 
 <section class="about">
   <h2>Sobre mí</h2>
-  <p>Soy fotógrafo especializado en conciertos y eventos en vivo. Capturo la energía, emoción y atmósfera real del escenario para que cada imagen cuente una historia auténtica.</p>
+  <p>Soy fotógrafo cinematográfico en Lima. Trabajo con personas, marcas y proyectos creativos creando imágenes con carácter, narrativa y estética de película.</p>
   </section>
 
-  <section class="portfolio">
-    <h2>Portafolio</h2>
+  <section id="portfolio" class="portfolio">
+
+    <h2 class="section-title">Portafolio</h2>
   
-    <div class="stack-carousel">
-      <div class="stack-track">
-        <img src="img/foto1.jpg" class="slide active">
-        <img src="img/foto2.jpg" class="slide">
-        <img src="img/foto3.jpg" class="slide">
-        <img src="img/foto4.jpg" class="slide">
-        <img src="img/foto5.jpg" class="slide">
-        <img src="img/foto6.jpg" class="slide">
-        <img src="img/foto7.jpg" class="slide">
-        <img src="img/foto8.jpg" class="slide">
-        <img src="img/foto9.jpg" class="slide">
-        <img src="img/foto10.jpg" class="slide">
-        <img src="img/foto11.jpg" class="slide">
-        <img src="img/foto12.jpg" class="slide">
-        <img src="img/foto13.jpg" class="slide">
-        <img src="img/foto14.jpg" class="slide">
-        <img src="img/foto15.jpg" class="slide">
-        <img src="img/foto16.jpg" class="slide">
-        <img src="img/foto17.jpg" class="slide">
-        <img src="img/foto18.jpg" class="slide">
-        <img src="img/foto19.jpg" class="slide">
-      </div>
-  
-      <button class="nav prev">❮</button>
-      <button class="nav next">❯</button>
+    <!-- FILTROS -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="concierto">Conciertos</button>
+      <button class="filter-btn" data-filter="sesiones">Sesiones</button>
+      <button class="filter-btn" data-filter="gastronomia">Gastronomía</button>
     </div>
+  
+    <!-- CONCIERTOS -->
+    <div class="portfolio-category active" data-category="concierto">
+      <div class="stack-carousel">
+        <div class="stack-track">
+          <img src="img/foto1.jpg" class="slide active">
+          <img src="img/foto2.jpg" class="slide">
+          <img src="img/foto3.jpg" class="slide">
+          <img src="img/foto4.jpg" class="slide">
+          <img src="img/foto5.jpg" class="slide">
+          <img src="img/foto6.jpg" class="slide">
+          <img src="img/foto7.jpg" class="slide">
+          <img src="img/foto8.jpg" class="slide">
+          <img src="img/foto9.jpg" class="slide">
+          <img src="img/foto10.jpg" class="slide">
+          <img src="img/foto11.jpg" class="slide">
+          <img src="img/foto12.jpg" class="slide">
+          <img src="img/foto13.jpg" class="slide">
+          <img src="img/foto14.jpg" class="slide">
+          <img src="img/foto15.jpg" class="slide">
+          <img src="img/foto16.jpg" class="slide">
+          <img src="img/foto17.jpg" class="slide">
+          <img src="img/foto18.jpg" class="slide">
+          <img src="img/foto19.jpg" class="slide">
+        </div>
+        <button class="nav prev">❮</button>
+        <button class="nav next">❯</button>
+      </div>
+    </div>
+  
+    <!-- SESIONES -->
+    <div class="portfolio-category" data-category="sesiones">
+      <div class="stack-carousel">
+        <div class="stack-track">
+          <img src="img/fotopareja1.jpg" class="slide active">
+          <img src="img/fotopareja2.jpg" class="slide">
+          <img src="img/fotopareja3.jpg" class="slide">
+        </div>
+        <button class="nav prev">❮</button>
+        <button class="nav next">❯</button>
+      </div>
+    </div>
+  
+    <!-- GASTRONOMÍA -->
+    <div class="portfolio-category" data-category="gastronomia">
+      <div class="stack-carousel">
+        <div class="stack-track">
+          <img src="img/fotocomida1.jpg" class="slide active">
+          <img src="img/fotocomida2.jpg" class="slide">
+          <img src="img/fotocomida3.jpg" class="slide">
+        </div>
+        <button class="nav prev">❮</button>
+        <button class="nav next">❯</button>
+      </div>
+    </div>
+  
   </section>
 
-<section class="packages">
-<h2>Paquetes</h2>
-<div class="cards">
+  <section id="packages" class="packages">
 
-  <a href="https://wa.me/926350409?text=Hola%20Joe,%20estoy%20interesado%20en%20el%20Paquete%20Básico%20para%20cobertura%20de%20evento.%20¿Podrías%20confirmarme%20disponibilidad%20y%20detalles%20de%20reserva?" target="_blank" class="card">
-    <h3>Básico</h3>
-    <p class="price">S/60</p>
-    <p>10 fotos editadas</p>
-    <p>Entrega 48 horas</p>
-  </a>
-
-  <a href="https://wa.me/926350409?text=Hola%20Joe,%20quisiera%20reservar%20el%20Paquete%20Pro%20para%20mi%20evento.%20¿Podemos%20coordinar%20fecha%20y%20detalles?" target="_blank" class="card highlight">
-    <h3>Pro</h3>
-    <p class="price">S/120</p>
-    <p>25 fotos editadas</p>
-    <p>Entrega 24 horas</p>
-    <p class="badge">Más solicitado</p>
-  </a>
-
-</div>
-</section>
+    <h2 class="experiencias-title">✨ Experiencias</h2>
+  
+    <!-- ========================= -->
+    <!-- SESIONES (PAREJAS) -->
+    <!-- ========================= -->
+    <div class="experiencias-category" data-exp="sesiones">
+      <div class="cards">
+  
+        <a href="https://wa.me/926350409?text=Hola%20Joe,%20estoy%20interesado%20en%20la%20Experiencia%20Esencial%20para%20pareja.%20¿Podrías%20confirmarme%20disponibilidad%20y%20detalles%20de%20reserva?" 
+           target="_blank" 
+           class="card">
+  
+          <span class="discount-badge">Más reservada</span>
+  
+          <h3>✨ Experiencia Esencial</h3>
+          <p class="price">S/ 180</p>
+  
+          <p>1 hora de sesión</p>
+          <p>Dirección artística</p>
+          <p>15 fotografías estilo cinematográfico</p>
+          <p>Entrega digital en alta calidad</p>
+  
+        </a>
+  
+  
+        <a href="https://wa.me/926350409?text=Hola%20Joe,%20estoy%20interesado%20en%20la%20Experiencia%20Cinemática%20para%20pareja.%20¿Podríamos%20coordinar%20fecha%20y%20detalles?" 
+           target="_blank" 
+           class="card highlight">
+  
+          <h3>✨ Experiencia Cinemática</h3>
+          <p class="price">S/ 350</p>
+  
+          <p>3 horas de sesión</p>
+          <p>Asesoría de vestuario</p>
+          <p>30 fotografías editadas</p>
+          <p>Retoque fino profesional</p>
+          <p>Reel corto para Instagram</p>
+  
+          <p class="badge">La favorita</p>
+  
+        </a>
+  
+      </div>
+    </div>
+  
+  
+    <!-- ========================= -->
+    <!-- GASTRONOMÍA -->
+    <!-- ========================= -->
+    <div class="experiencias-category" data-exp="gastronomia">
+      <div class="cards">
+  
+        <a href="https://wa.me/926350409?text=Hola%20Joe,%20estoy%20interesado%20en%20la%20Experiencia%20Menú%20Visual%20para%20mi%20restaurante.%20¿Podemos%20coordinar%20detalles?" 
+           target="_blank" 
+           class="card">
+  
+          <h3>🍽 Experiencia Menú Visual</h3>
+          <p class="price">S/ 280</p>
+  
+          <p>20 fotografías de platos</p>
+          <p>Edición comercial profesional</p>
+          <p>Optimización para redes</p>
+          <p>Entrega en 72 horas</p>
+  
+        </a>
+  
+  
+        <a href="https://wa.me/926350409?text=Hola%20Joe,%20me%20interesa%20la%20Experiencia%20Marca%20Premium%20para%20mi%20negocio.%20¿Podemos%20hablar%20de%20la%20propuesta?" 
+           target="_blank" 
+           class="card highlight">
+  
+          <h3>🍽 Experiencia Marca Premium</h3>
+          <p class="price">S/ 550</p>
+  
+          <p>40 fotografías profesionales</p>
+          <p>Dirección de iluminación</p>
+          <p>Styling básico</p>
+          <p>Adaptación para Instagram y carta digital</p>
+  
+          <p class="badge">Para marcas</p>
+  
+        </a>
+  
+      </div>
+    </div>
+  
+  
+    <!-- ========================= -->
+    <!-- CONCIERTOS -->
+    <!-- ========================= -->
+    <div class="experiencias-category active" data-exp="concierto">
+      <div class="cards">
+  
+        <a href="https://wa.me/926350409?text=Hola%20Joe,%20estoy%20interesado%20en%20la%20Experiencia%20Show%20Básico%20para%20mi%20evento.%20¿Podrías%20confirmarme%20disponibilidad?" 
+           target="_blank" 
+           class="card">
+  
+          <span class="discount-badge">Eventos</span>
+  
+          <h3>🎸 Experiencia Show Básico</h3>
+          <p class="price">S/ 120</p>
+  
+          <p>1 hora de cobertura</p>
+          <p>15 fotografías editadas</p>
+          <p>Entrega en 48 horas</p>
+  
+        </a>
+  
+  
+        <a href="https://wa.me/926350409?text=Hola%20Joe,%20quiero%20reservar%20la%20Experiencia%20Show%20Pro.%20¿Podemos%20coordinar%20fecha%20y%20detalles?" 
+           target="_blank" 
+           class="card highlight">
+  
+          <h3>🎸 Experiencia Show Pro</h3>
+          <p class="price">S/ 250</p>
+  
+          <p>2 horas de cobertura</p>
+          <p>30 fotografías editadas</p>
+          <p>Entrega en 24 horas</p>
+          <p>Prioridad de edición</p>
+  
+          <p class="badge">Más solicitado</p>
+  
+        </a>
+  
+      </div>
+    </div>
+  
+  </section>
 
 <section id="contacto" class="contact">
 <h2>Contacto</h2>
@@ -91,4 +245,3 @@ Lima, Perú — © 2026 Joe Fotógrafo
 <script src="script.js"></script>
 </body>
 </html>
-
