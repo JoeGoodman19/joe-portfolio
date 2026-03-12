@@ -172,7 +172,27 @@ document.querySelectorAll(".filter-btn").forEach(button => {
         nextExp.classList.add("active");
       }, 300);
     }
-
+    window.addEventListener("scroll", function() {
+      const nav = document.querySelector(".navbar");
+      nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
   });
+  const reveals = document.querySelectorAll(".reveal");
 
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+  window.addEventListener("scroll", () => {
+    const hero = document.querySelector(".hero-img");
+    const scroll = window.scrollY;
+  
+    hero.style.transform = `translateY(${scroll * 0.3}px)`;
+  });
+});  
 });
